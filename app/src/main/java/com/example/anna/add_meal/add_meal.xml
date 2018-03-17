@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/app_padding">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food_dummy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/app_padding"
+        android:paddingTop="@dimen/app_padding"
+        android:text="Restaurant:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your restaurant name here..."
+        android:inputType="text"
+        android:paddingLeft="@dimen/app_padding"
+        android:paddingRight="@dimen/app_padding" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/app_padding"
+        android:text="Meal Name:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/meal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your meal name here..."
+        android:inputType="text"
+        android:paddingLeft="@dimen/app_padding"
+        android:paddingRight="@dimen/app_padding" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/app_padding"
+        android:text="Notes: "
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write meal notes here"
+        android:inputType="text|textMultiLine"
+        android:paddingLeft="@dimen/app_padding"
+        android:paddingRight="@dimen/app_padding"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Save" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:backgroundTint="#424242"
+            android:text="Edit"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+</LinearLayout>
